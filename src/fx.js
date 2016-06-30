@@ -12,12 +12,14 @@ var FxBot = function Contstuctor(settings){
 }
 
 FxBot.prototype.run = function() {
+  console.log('Running...')
   this.fxBot.hears('dollar', this.config.whenMessages, this._onHearsDollar);
   this.fxBot.hears('pounds', this.config.whenMessages, this._onHearsPounds);
   this.fxBot.hears('euro', this.config.whenMessages, this._onHearsEuro);
 }
 
 FxBot.prototype._onHearsDollar = function(bot,message){
+  console.log('Dollaring...')
   getFx('dollar', bot, message);
 }
 
