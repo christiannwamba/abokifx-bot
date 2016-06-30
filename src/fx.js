@@ -2,7 +2,7 @@ var Bot = require('botkit');
 var request = require('request');
 var cheerio = require('cheerio');
 
-var FxBot = function Contstuctor(settings){
+var FxBot = function Constructor(settings){
   this.fxBot = new Bot.slackbot(settings)
   this.fxBot.spawn(settings).startRTM();
   this.config = {

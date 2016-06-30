@@ -37,8 +37,11 @@ set BOT_API_KEY=your_api_key & node index.js
 ```
 
 Go to the Slack team you integrated the bot and ask her Fx questions:
+
 1. @fx dollar : get's dollar rate
+
 2. @fx pounds : get's pounds rate
+
 3. @fx euro : get's euro rate
 
 > She will only answer you if you ask her in a private conversation or invite her to a team before asking her the above questions

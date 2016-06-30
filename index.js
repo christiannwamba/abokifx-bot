@@ -5,7 +5,7 @@ var token = process.env.BOT_API_KEY;
 
 var fxBot = new FxBot({
     debug: false,
-    token: process.env.BOT_API_KEY
+    token: token
 });
 console.log('Starting...')
 fxBot.run();
